@@ -1,0 +1,102 @@
+img {
+	width: 14%;
+	margin: 2px;
+}
+.basket {
+	width: 47%;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	width: 1200px;
+	flex-direction: column;
+	align-items: center;
+	margin: 0% 15% 0% 15%;
+}
+
+.food_for_guinea_pigs {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	width: 560px;
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+	border: 1px solid rgb(14, 84, 0);
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	width: 527px;
+	height: 117px;
+	align-items: center;
+	padding: 1% 0% 1% 1%;
+}
+
+.text_fodder_1,
+.text_fodder_2,
+.text_fodder_3,
+.text_fodder_4,
+.text_fodder_5,
+.text_fodder_6 {
+	width: 412px;
+	height: 23px;
+	font-size: 19px;
+}
+
+.quantity {
+	font-family: "Roboto-Light", Arial, serif;
+}
+
+.the_text_block_of_the_first_product,
+.the_text_block_of_the_second_product,
+.the_text_block_of_the_third_product,
+.the_text_block_of_the_fourth_product,
+.the_text_block_of_the_fifth_product,
+.the_text_block_of_the_sixth_product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 77%;
+	height: 133px;
+	padding: 0% 0% 0% 2%;
+}
+
+.price {
+	padding: 0% 0% 0% 0%;
+	left: 0%;
+}
+
+.button_and_total {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 554px;
+	justify-content: flex-start;
+	margin: 1% 0% 0% 0%;
+}
+
+.button {
+	background: #cbffa4;
+	border: 3px solid #32421c;
+	border-radius: 8px;
+	padding: 8px;
+	color: rgb(0 0 0);
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.button:active {
+	box-shadow: 2px 2px 5px #fc894d;
+}
+
+.result {
+	font-weight: 900;
+	font-size: 25px;
+	margin: 0% 0% 0% 20%;
+}
