@@ -51,3 +51,36 @@ function buttonResult() {
 	button.addEventListener("click", sailsam);
 }
 buttonResult();
+
+/* 
+//Второй вариант решения этой задачи
+
+//У нас есть элементы, в которых записаны цены айтимов из корзины. Нужно записать их все в переменные. 
+const feedPrices = document.querySelectorAll('[id^="feed_price"]');
+
+//Взять значение из них (метод innerHTML) 
+// Сложить значения переменных 
+// Привести значение переменных к числу (вспомним про унарный плюс) 
+let totalSum = 0;
+feedPrices.forEach((feedPrice) => {
+	totalSum += +feedPrice.innerHTML;
+});
+
+// Вставить полученное значение в элемент (предварительно найти его и записать в переменную) 
+const total = document.querySelector(".total");
+total.innerHTML = totalSum;
+
+//Создать функцию, которая будет вычитать 20%  от общей стоимости 
+function applyDiscount() {
+	feedPrices.forEach((feedPrice) => {
+		const discount = feedPrice.innerHTML * 0.8;
+		feedPrice.innerHTML = discount;
+	});
+	const totalDiscount = totalSum * 0.8;
+	total.innerHTML = totalDiscount.toFixed(2);
+}
+
+// Добавить метод onclick или addEventListener на кнопку ”Использовать купон на 20%”
+const button = document.getElementById("buttontotal");
+button.addEventListener("click", applyDiscount, {once: true,}); // чтобы кнопка срабатывала только один раз 
+ */
